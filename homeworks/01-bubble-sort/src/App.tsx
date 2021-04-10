@@ -4,10 +4,7 @@ import {arrayWithRandomValues} from "./utils/arrayWithRandomValues"
 import './App.css';
 import './components/pillar/pillar.css';
 import {bubbleSort, Sorted} from "./utils/bubbleSort";
-// import {SortButton} from "./components/buttons/SortButton";
-const array = arrayWithRandomValues();
 const delay = 100;
-let status:string = 'pending';
 interface PropsInterface {
 }
 interface AppInterface {
