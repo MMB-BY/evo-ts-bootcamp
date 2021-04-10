@@ -1,0 +1,42 @@
+.app {
+  margin: 0 auto;
+}
+
+.game {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  width: 600px;
+  height: 400px;
+  text-align: center;
+
+}
+
+.title {
+  font-size: 50px;
+  font-weight: 700;
+  color: #1F1f1f;
+}
+
+.pillarContainer {
+  position: absolute;
+  display: flex;
+  align-items: flex-end;
+  bottom: 35px;
+}
+
+.buttonContainer {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 30%;
+  justify-content: space-between;
+}
+
+.status {
+  position: absolute;
+  bottom: -25px;
+}
