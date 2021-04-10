@@ -1,8 +1,7 @@
-import {randomValue} from './randomValueGenerator';
+export let Sorted: boolean = false;
 
 export function bubbleSort(arr: number[]): number[] {
     for (let i = 0; i < arr.length; i++) {
-      // for (let j = i; j < arr.length; j++) {
         let bubble = 0;
         if (arr[i+1] < arr[i]) {
           bubble = arr[i];
@@ -10,8 +9,8 @@ export function bubbleSort(arr: number[]): number[] {
           arr[i+1] = bubble;
           return arr;
         }
-      // }
     }
+    Sorted = true;
     return arr;
   }
   
