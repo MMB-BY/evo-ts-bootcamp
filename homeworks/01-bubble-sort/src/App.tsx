@@ -32,7 +32,7 @@ export class App extends Component<PropsInterface,AppInterface>{
   pause = () => {
     if (this.interval) {
       clearInterval(this.interval);
-      this.setState(() => ({arr: [1,22,3,45,5], status: 'pause'}))
+      this.setState(() => ({arr: this.state.arr, status: 'pause'}));
     }
   }
 
