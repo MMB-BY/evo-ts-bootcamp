@@ -1,5 +1,3 @@
-export function randomValue(): number {
-    const min = 1;
-    const max = 200;
-    return min + Math.random() * (max - min);
+export function randomValue(min: number, max: number): number {
+  return min + Math.random() * (max - min);
 }

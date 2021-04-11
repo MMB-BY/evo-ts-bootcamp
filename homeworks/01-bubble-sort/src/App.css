@@ -12,13 +12,12 @@
   width: 600px;
   height: 400px;
   text-align: center;
-
 }
 
 .title {
   font-size: 50px;
   font-weight: 700;
-  color: #1F1f1f;
+  color: #1f1f1f;
 }
 
 .pillarContainer {
@@ -29,14 +28,25 @@
 }
 
 .buttonContainer {
-  display: flex;
   position: absolute;
   bottom: 0;
-  width: 30%;
-  justify-content: space-between;
 }
 
 .status {
-  position: absolute;
-  bottom: -25px;
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.delay_section {
+  margin-top: 300px;
+}
+
+.delay_section_title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+button {
+  font-size: 14px;
+  width: 50px;
 }
