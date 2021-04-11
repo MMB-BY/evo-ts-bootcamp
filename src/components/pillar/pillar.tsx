@@ -1,19 +1,15 @@
 import { Component } from "react";
-import { bubbleSort } from "../../utils/bubbleSort";
-
-interface PropsInterface {
+interface PillarProps {
   array: number[];
 }
-interface StateInterface {
+interface PillarState {
   arr: number[];
 }
 
-export class Pillar extends Component<PropsInterface, StateInterface> {
-  state = { arr: this.props.array };
-
+export class Pillar extends Component<PillarProps, PillarState> {
   render() {
-    return this.state.arr.map((el) => (
-      <div className="pillar" style={{ height: el + "px" }}></div>
+    return this.props.array.map((el, index) => (
+      <div key={index} className="pillar" style={{ height: el + "px" }}></div>
     ));
   }
 }

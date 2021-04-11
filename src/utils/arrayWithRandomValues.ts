@@ -1,5 +1,7 @@
-import {randomValue} from './randomValueGenerator';
+import { randomValue } from "./randomValueGenerator";
 
 export function arrayWithRandomValues(): number[] {
-    return Array.from({length: 30}).map(el => el = randomValue());
+  const lengthOfArray = Math.floor(randomValue(20, 40));
+
+  return Array.from({ length: lengthOfArray }).map(() => randomValue(1, 200));
 }
